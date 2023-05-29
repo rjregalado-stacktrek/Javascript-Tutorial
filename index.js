@@ -4,6 +4,8 @@
 // 1. Number is not allowed at the beginning of the variable
 // 2. Purely letter and numbers 
 // 3. Not allowed having space between characters
+// 4. Javascript Keywords are not allowed (e.g: let, var, if, var, const, switch,
+      return, function, try)
 
 // e.g.
 // firstName = Camel Case
@@ -277,6 +279,13 @@ function remainder(a, b) {
 let result = remainder(9, 4); // result = 1
 
 console.log(result)
+
+
+// HOF (High Order Functions)
+
+// Map, Reduce, Filter
+
+
 
 
 
