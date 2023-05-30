@@ -13,4 +13,4 @@ function getFactorial(n) {
     return result;
   }
 
-  //console.log(getFactorial(5))
+  console.log(getFactorial(5))
