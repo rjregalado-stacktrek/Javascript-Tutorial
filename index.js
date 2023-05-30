@@ -400,7 +400,8 @@ console.log(result)
 
 //Arrow functions allow us to write shorter function syntax:
 
-let myFunction = (a, b) => a * b;
+let myFunction = (a, b) => a * b; // ES6 
+
 
 console.log(myFunction(2,3)) // 6
 

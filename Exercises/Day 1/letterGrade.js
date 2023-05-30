@@ -13,3 +13,7 @@ function letterGrade(grade) {
     return "F";
   }
 }
+
+const grade = letterGrade(55);
+
+console.log(grade)

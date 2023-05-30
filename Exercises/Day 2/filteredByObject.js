@@ -7,7 +7,7 @@ let people = [
   ];
   
   function filterById(people, minId) {
-    let result = [];
+    let result = []; // empty array
   
     for (let i = 0; i < people.length; i++) {
       if (people[i].id >= minId) {
@@ -18,8 +18,8 @@ let people = [
     return result;
   }
   
-  
-  console.log(filterById(people, 110));
+  const filter = filterById(people, 110)
+  console.log(filter);
 
   /*
 //ALTERNATIVE SOLUTION
