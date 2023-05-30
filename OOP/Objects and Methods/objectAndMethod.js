@@ -1,3 +1,13 @@
+//============= OBJECTS AND METHODS =====================
+
+// Objects are collections of key-value pairs that store and organize data in a structured way. 
+// The values can be of any data type or could also be arrays or even functions.
+
+// The this keyword in the methods reference the object 
+// from which the function or method is being called. 
+// In the example, ${this.name[0]} and ${this.balance} refers to the balance value 
+// defined within the same object.
+
 const account = {
 	accountNumber: '1234567890',
 	balance: 1000,

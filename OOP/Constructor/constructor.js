@@ -1,6 +1,10 @@
 
 //============= CONSTRUCTORS ================
 
+// Constructors define a template or blueprint for an object and allows us to 
+// create multiple instances of that object. 
+// Capital first letter to differentiate them from functions.
+
 function Account(accountNumber, balance, ownerName){
         this.accountNumber = accountNumber;
         this.balance = balance;
@@ -26,7 +30,7 @@ function Account(accountNumber, balance, ownerName){
     };
   }
 
-const account = new Account("123545625", 1500, ["Juan", "Dela Cruz"]);
+const account = new Account("123545625", 1500, ["Juan", "Dela Cruz"]); // instance
 
 //console.log(account)
 
