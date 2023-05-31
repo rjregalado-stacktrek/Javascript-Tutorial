@@ -1,5 +1,28 @@
+//============== Object Oriented Programming(OOP) ============
+
+// A programming paradigm that allows you to create and work with objects and classes. 
+// JavaScript is a versatile language that supports both object-oriented 
+// and prototype-based programming styles.
+
+// Key Concepts:
+
+// 1. Objects - You can define objects using object literals or by using the new keyword 
+      // along with a constructor function. 
+      // Objects can have properties (data) and methods (functions).
+
+// 2. Constructors - Constructors are special functions used to create and initialize objects. 
+
+// 3. Prototypes -  used to define shared properties and methods that can be accessed by all 
+      // instances of a particular object type. 
+
+// 4. Inheritance - Objects can inherit properties and methods from other objects by 
+      // using the prototype chain.
+
+// 5. Object-oriented patterns - JavaScript supports various object-oriented patterns, 
+      // such as factory functions, object composition, and the module pattern.
+
 /*
-//JavaScript Class Syntax
+// JavaScript Class Syntax
 
 // Syntax
 
@@ -28,6 +51,8 @@ const myCar1 = new Car("Toyota", 2010);
 
 const myCar2 = new Car("Mitsubishi", 2019);
 
+
+
 //Class Methods
 
 //Syntax:
@@ -43,8 +68,12 @@ class ClassName {
 
 //================== CLASSES =================
 
+// Classes serve as blueprints for creating objects with shared properties and methods.
+// Use `class` keyword followed by the `name` of the class.
+// e.g
+
 class Car {
-  constructor(name, year) {
+  constructor(name, year) { // parameters, arguments 
     this.name = name;
     this.year = year;
   }
@@ -54,26 +83,30 @@ const myCar1 = new Car("Toyota", 2010);
 
 const myCar2 = new Car("Mitsubishi", 2019);
 
+// HTML DOM (Document Object Model)
+
 function myCar(){
-    document.getElementById("car1").innerHTML = `My first car is ${myCar1.name}.`;
-    document.getElementById("car2").innerHTML = `My second car is ${myCar2.name}.`;
+    document.getElementById("car1").innerHTML = `My first car is  ${myCar1.name} - ${myCar1.year}.`;
+    document.getElementById("car2").innerHTML = `My second car is ${myCar2.name} - ${myCar2.year}.`;
 }
+
 
 // parent class
 class Person {
   //name; // optional
 
-  constructor(name) {
+  constructor(name, age) {
     this.name = name; // initializes name
+    this.age = age;
   }
 
   // method
   introduceSelf() {
-    return `Hi! I'm ${this.name}`;
+    return `Hi! I'm ${this.name} and ${this.age} years old.`;
   }
 }
 
-const olivia = new Person('Olivia'); // create new Person
+const olivia = new Person('Olivia', 25); // create new Person
 
 const introduce = olivia.introduceSelf();
 console.log(introduce)
@@ -112,7 +145,18 @@ const juan = new  Professor("Juan Dela Cruz", "Javascript");
 
 const grade = juan.grade(80);
 
-console.log(grade)
+console.log(grade);
+
+const introduce1 = juan.introduceSelf();
+
+console.log(introduce1);
+
+function myProfessor(){
+  document.getElementById("introduce1").innerHTML = introduce1;
+  document.getElementById("grade").innerHTML = grade;
+  
+}
+
 
 
 // Another Example
