@@ -17,7 +17,7 @@ const account = {
 		phone: '123-456-777'
 	},
 	checkBalance: function() {
-		return `Hi ${this.owner.name[0]} ${this.owner.name[1]}, your balance is Php${this.balance}.`
+		return `Hi ${this.owner.name[0]} ${this.owner.name[1]}, ${this.owner.address}, your balance is Php${this.balance}.`
 	},
 	deposit: function(amount) {
     	this.balance += amount;

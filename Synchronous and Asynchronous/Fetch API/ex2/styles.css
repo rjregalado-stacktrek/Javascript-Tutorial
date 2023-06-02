@@ -1,0 +1,31 @@
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 b {
+    color: blue;
+}
+
+#example {
+    width: auto;
+    height: auto;
+    background-color: lightgray;
+    border: 1px solid darkgray;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    width: auto;
+    height: 30px;
+    margin-top: 20px;
+    background-color: rgb(39, 40, 99);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}

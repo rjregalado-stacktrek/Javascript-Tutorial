@@ -22,7 +22,7 @@ class Car {
     removeCar(car) {
       const index = this.inventory.indexOf(car);
       if (index > -1) {
-        this.inventory.splice(index, 1);
+        this.inventory.splice(index, 1); // pop() this.inventory[0]["quantity"] - 1
       }
     }
   
@@ -87,6 +87,8 @@ class Car {
   dealership.addCar(toyotaCorolla1);
   dealership.addCar(toyotaCorolla2);
   dealership.addCar(hondaCivic1);
+  //console.log(dealership())
+  console.log(dealership.inventory[0]["quantity"]-1)
   
   // Creating salespeople and a manager
   const salesperson1 = new Salesperson("John Doe", 1001);

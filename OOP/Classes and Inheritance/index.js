@@ -157,8 +157,6 @@ function myProfessor(){
   
 }
 
-
-
 // Another Example
 
 // Parent Class
@@ -192,10 +190,13 @@ class Model extends Vehicle {
 }
 
 let myVehicle = new Model("Mitsubishi", "L300");
+
+const vehicle1 = myVehicle.show();
+
 console.log(myVehicle.show())
 
 function vehicle(){
-  document.getElementById("vehicle").innerHTML = myVehicle.show();
+  document.getElementById("vehicle").innerHTML = vehicle1;
 }
 
 
