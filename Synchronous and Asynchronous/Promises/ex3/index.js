@@ -5,13 +5,13 @@ function myDisplayer(message) {
   function getFile(myCallback) {
     let req = new XMLHttpRequest();
     req.onload = function() {
-      if (req.status == 200) {
+      if (req.status == 200) { // successful
         myCallback(this.responseText);
       } else {
         myCallback("Error: " + req.status);
       }
     }
-    req.open('GET', "test.html");
+    req.open('GET', "test1.html");
     req.send();
   }
   

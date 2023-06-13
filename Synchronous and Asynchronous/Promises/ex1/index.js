@@ -28,7 +28,7 @@ let myPromise1 = new Promise(function(myResolve, myReject) {
 
 // some code (try to change x to 5)
 
-  if (x == 0) {
+  if (x == 5) {
     myResolve("OK");
   } else {
     myReject("Error");

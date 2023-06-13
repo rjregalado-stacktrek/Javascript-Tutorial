@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Form</title>
+</head>
+<body>
+    <div style="text-align:center">
+        <form id="questionForm">
+            <h4>Enter your favorite number</h4>
+            <input type="text" id="question">
+            <button type="submit">Click me!</button>
+        </form>
+        <div id="answer" style="margin-top: 10px;"></div>
+    </div>
+    <script>
+        document.getElementById('questionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var question = document.getElementById('question').value;
+            getAnswer(question);
+        });
+
+        function getAnswer(question) {
+            // Replace <API_ENDPOINT> with the actual URL of your API
+            var apiEndpoint = `https://jsonplaceholder.typicode.com/comments?postId=${Number(question)}`;// + encodeURIComponent(question);
+            //var apiEndpoint = `https://www.eightballapi.com/api`;// + encodeURIComponent(question);
+
+            fetch(apiEndpoint)
+                .then((response)=>{
+                        return response.json();
+                })
+                .then((data) => {
+                    //var answer = Object(data[0].email);
+                    var answer = data[0].email;
+                    //var answer = data[0];
+
+                    console.log(answer);
+                    displayAnswer(answer);
+                })
+                .catch(function(error) {
+                    displayAnswer('Error retrieving answer');
+                });
+        }
+
+        function displayAnswer(answer) {
+            var answerElement = document.getElementById('answer');
+            answerElement.textContent = 'Email: ' + answer;
+        }
+    </script>
+</body>
+</html>

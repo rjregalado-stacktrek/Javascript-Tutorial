@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Answering Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin: 0 auto;
+            width: 300px;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #answer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Question Answering Web App</h1>
+    <form id="questionForm">
+        <label for="question">Ask a question:</label><br>
+        <input type="number" id="question" name="question"><br><br>
+        <input type="submit" value="Submit" >
+    </form>
+    <button onclick="getAnswer()">Answer</button>
+
+    <div id="answer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

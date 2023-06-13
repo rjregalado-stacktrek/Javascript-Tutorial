@@ -30,5 +30,3 @@ function getAnswer(question) {
         .then((data) => 
         document.getElementById("reading").innerHTML += "reading = " + data.reading + "<br/>");
 }
-
-

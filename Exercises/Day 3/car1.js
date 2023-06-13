@@ -21,9 +21,10 @@ class Dealership {
 
   removeCar(car, quantity) {
     const foundCar = this.inventory.find(c => c.make === car.make && c.model === car.model && c.year === car.year);
+    
     if (foundCar) {
       if (foundCar.quantity >= quantity) {
-        foundCar.quantity -= quantity;
+        foundCar.quantity -= quantity; // subtract
         if (foundCar.quantity === 0) {
           const index = this.inventory.indexOf(foundCar);
           if (index > -1) {
@@ -93,11 +94,12 @@ class Dealership {
   const dealership = new Dealership("ABC Auto", "123 Main Street");
   
   // Adding cars to the inventory
-  const toyotaCorolla1 = new Car("Toyota", "Avanza", 2021, 20000, 5);
+  const toyotaCorolla1 = new Car("Toyota", "Avanza", 2021, 20000, 5); // instance
   const toyotaCorolla2 = new Car("Toyota", "Camry", 2022, 22000, 4);
   const toyotaCorolla3 = new Car("Toyota", "Rav4", 2023, 40000, 3);
   const toyotaCorolla4 = new Car("Toyota", "Prius", 2023, 13000, 6);
   const toyotaCorolla5 = new Car("Toyota", "Fortuner", 2019, 20000, 10);
+
   const hondaCivic1 = new Car("Honda", "Civic", 2022, 22000, 2);
   const hondaCivic2 = new Car("Honda", "Accord", 2021, 19000, 1);
   
@@ -113,11 +115,11 @@ class Dealership {
   console.log("Inventory before deletion:");
   console.log(dealership.inventory);
 
-  // Remove 2 Toyota Corolla cars from the inventory
-  dealership.removeCar(toyotaCorolla1, 2);
-  dealership.removeCar(toyotaCorolla3, 3);
-  dealership.removeCar(hondaCivic1, 1);
-  dealership.removeCar(toyotaCorolla3, 1);
+  // Remove  Toyota Corolla & Honda Civic cars from the inventory
+  dealership.removeCar(toyotaCorolla1, 2); // remaining - 3
+  dealership.removeCar(toyotaCorolla3, 3); // remaining - 0
+  dealership.removeCar(hondaCivic1, 1); // remaining - 1
+  //dealership.removeCar(toyotaCorolla3, 1);
 
 
   console.log("Inventory after deletion:");

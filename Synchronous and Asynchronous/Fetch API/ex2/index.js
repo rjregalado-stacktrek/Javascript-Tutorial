@@ -2,7 +2,7 @@
 let output = document.getElementById('example');
       
 function fetchData() {
-         fetch('https://dummyjson.com/products/3')
+         fetch('https://dummyjson.com/products/4')
          .then(response => response.json())
          .then(data => {
             output.innerHTML += "id = " + data.id + "<br/>";
