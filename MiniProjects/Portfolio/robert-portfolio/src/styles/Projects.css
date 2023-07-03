@@ -1,0 +1,37 @@
+.projects {
+    margin-top: 20px;
+  }
+  
+  .projects-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .project {
+    margin-bottom: 20px;
+  }
+  
+  .project-title {
+    font-size: 20px;
+  }
+  
+  .project-description {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .project-technologies {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .project-technologies li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  

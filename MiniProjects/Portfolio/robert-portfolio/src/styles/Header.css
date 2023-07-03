@@ -1,0 +1,26 @@
+header {
+  background-color: #00d9ff;
+  padding: 20px;
+}
+
+nav {
+  display: inline-flexbox;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-item {
+  margin-right: 10px;
+}
+
+.navbar-item a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.active-link {
+  background-color: #fff;
+  color: #08ccbc;
+  border-radius: 4px;
+}
